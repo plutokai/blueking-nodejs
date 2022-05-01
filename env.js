@@ -16,8 +16,8 @@ const config = {
   },
   stag: {
     NODE_ENV: JSON.stringify('production'),
-    AJAX_URL_PREFIX: JSON.stringify(''),
-    USER_INFO_URL: JSON.stringify('/api/user'),
+    AJAX_URL_PREFIX: JSON.stringify('/api'),
+    USER_INFO_URL: JSON.stringify('/user'),
     assetsPublicPath: '{{BK_STATIC_URL}}',
   },
 };

@@ -13,6 +13,7 @@ const history = require('connect-history-api-fallback');
 const user = require('./middleware/user');
 
 const mockTable = require('./api/table');
+const magicTable = require('./api/magictable')
 
 const app = new Express();
 
@@ -20,6 +21,7 @@ const PORT = process.env.PORT || 5000;
 
 /** 仅解决空模版直接部署时，模拟的接口，防止直接部署接口404，实际项目可删除 */
 mockTable(app);
+magicTable(app);
 
 app.use(cookieParser());
 app.use(user);
