@@ -94,6 +94,11 @@ export default {
             icon: 'icon-tree-group-shape',
             url: 'example2',
           },
+          {
+            name: 'Magicbox',
+            icon: 'icon-tree-group-shape',
+            url: 'magicbox',
+          },
         ],
         id: '首页',
         toggle: false,

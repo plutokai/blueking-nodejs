@@ -16,6 +16,8 @@ const Example1 = () => import(/* webpackChunkName: 'example1' */'@/views/example
 // import Example1 from '@/views/example1'
 const Example2 = () => import(/* webpackChunkName: 'example2' */'@/views/example2');
 // import Example2 from '@/views/example2'
+const Magicbox = () => import(/* webpackChunkName: 'magicbox' */'@/views/magicbox');
+// import magicbox from '@/views/magicbox'
 const NotFound = () => import(/* webpackChunkName: 'none' */'@/views/404');
 // import NotFound from '@/views/404'
 
@@ -43,6 +45,14 @@ const routes = [
         component: Example2,
         meta: {
           matchRoute: '登陆信息',
+        },
+      },
+      {
+        path: 'magicbox',
+        name: 'magicbox',
+        component: Magicbox,
+        meta: {
+          matchRoute: 'Magicbox',
         },
       },
     ],
