@@ -10,9 +10,9 @@ const config = {
     AJAX_URL_PREFIX: JSON.stringify('api/'),
     USER_INFO_URL: JSON.stringify('/user'),
     assetsPublicPath: '/',
-    HOST: '',
-    BKPAAS_APP_ID: JSON.stringify(''),
-    BK_LOGIN_URL: JSON.stringify(''),
+    HOST: 'dev.paas-edu.bktencent.com',
+    BKPAAS_APP_ID: JSON.stringify('homework-vue'),
+    BK_LOGIN_URL: JSON.stringify('https://paas-edu.bktencent.com/login/'),
   },
   stag: {
     NODE_ENV: JSON.stringify('production'),
